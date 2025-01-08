@@ -5,7 +5,7 @@ class SwordSoldier : public BaseUnit {
 public:
     SwordSoldier() = default;
     ~SwordSoldier() override = default;
-    void onTick() override;
+    Json::Value onTick() override;
     void onInit() override;
     void parse(const Json::Value& value) override;
 private:

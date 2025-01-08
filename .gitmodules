@@ -1,0 +1,9 @@
+[submodule "libs/raylib"]
+	path = libs/raylib
+	url = git@github.com:raysan5/raylib.git
+[submodule "libs/jsoncpp"]
+	path = libs/jsoncpp
+	url = git@github.com:open-source-parsers/jsoncpp.git
+[submodule "libs/fmt"]
+	path = libs/fmt
+	url = git@github.com:fmtlib/fmt.git

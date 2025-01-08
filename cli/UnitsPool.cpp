@@ -1,4 +1,5 @@
 #include "UnitsPool.hpp"
+#include "json/value.h"
 #include <cmath>
 #include <iterator>
 #include <vector>
@@ -8,6 +9,7 @@
 namespace {
     std::vector<BaseUnit*> pool;
     int current_id = 0;
+    int current_tick = 0;
 
     double unit_distance_from_origin(BaseUnit* u) {
         return std::sqrt(u->x * u->x + u->y * u->y);
@@ -32,10 +34,17 @@ void UnitsPool::reorganize_teams() {
     }
 }
 
-void UnitsPool::tick() {
+Json::Value UnitsPool::tick() {
+    Json::Value value;
+    value["tick"] = current_tick;
     for (const auto& unit : pool) {
-        unit->onTick();
+        Json::Value row = unit->onTick();
+        if (row) {
+            value["actions"].append(row);
+        }
     }
+    current_tick++;
+    return value;
 }
 
 std::optional<int> UnitsPool::getRandomTargetForUnit(BaseUnit* unit) {
@@ -119,4 +128,26 @@ bool UnitsPool::move_towards_target(BaseUnit *unit, int target_id) {
         return true;
     }
     return false;
+}
+
+void UnitsPool::clear_pool() {
+    for (auto u : pool) {
+        delete u;
+    }
+    pool.clear();
+}
+
+bool UnitsPool::check_end() {
+    bool team_1_alive = true;
+    bool team_2_alive = true;
+    for (const auto& u : pool) {
+        if (u->team == 1) {
+            team_1_alive &= u->health > 0.f;
+        }
+        if (u->team == 2) {
+            team_2_alive &= u->health > 0.f;
+        }
+    }
+
+    return team_1_alive && team_2_alive;
 }

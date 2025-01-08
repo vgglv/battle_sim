@@ -10,3 +10,7 @@ void BaseUnit::parse(const Json::Value& value) {
         damage = value["damage"].asFloat();
     }
 }
+
+bool BaseUnit::isAlive() {
+    return health > 0.f;
+}

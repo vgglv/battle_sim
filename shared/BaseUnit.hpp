@@ -8,9 +8,10 @@ class BaseUnit {
 public:
     BaseUnit() = default;
     virtual ~BaseUnit() = default;
-    virtual void onTick() = 0;
+    virtual Json::Value onTick() = 0;
     virtual void onInit() = 0;
     virtual void parse(const Json::Value& value);
+    bool isAlive();
     int x = 0;
     int y = 0;
     int width = 16;

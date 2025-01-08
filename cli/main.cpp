@@ -1,4 +1,5 @@
 #include "json/reader.h"
+#include "json/writer.h"
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
@@ -6,6 +7,7 @@
 #include "BaseUnit.hpp"
 #include "SwordSoldier.hpp"
 #include "UnitsPool.hpp"
+#include "fmt/base.h"
 
 
 int main(int argc, char* argv[]) {
@@ -38,8 +40,25 @@ int main(int argc, char* argv[]) {
         }
     }
     UnitsPool::reorganize_teams();
+    Json::Value outputJson;
     while(true) {
-        UnitsPool::tick();
+        Json::Value row = UnitsPool::tick();
+        outputJson.append(row);
+        if (!UnitsPool::check_end()) {
+            break;
+        }
+    }
+
+    Json::StreamWriterBuilder writer;
+    std::string jsonString = Json::writeString(writer, root);
+
+    // Write to a file
+    std::ofstream outputFile("output.json");
+    if (outputFile.is_open()) {
+        outputFile << jsonString;
+        outputFile.close();
+    } else {
+        fmt::println("Unable to open file for writing");
     }
     return EXIT_SUCCESS;
 }
