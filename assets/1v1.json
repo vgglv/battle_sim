@@ -1,0 +1,16 @@
+[
+    {
+        "type": "soldier",
+        "amount": 1,
+        "team": 1,
+        "health": 100,
+        "damage": 80
+    },
+    {
+        "type": "soldier",
+        "amount": 1,
+        "team": 2,
+        "health": 100,
+        "damage": 80
+    }
+]
