@@ -5,7 +5,7 @@
 
 Json::Value SwordSoldier::onTick() {
     if (!isAlive()) {
-        return Json::nullValue;
+        return idle();
     }
     if (target == -1) {
         fmt::println("Unit [{}]: no target. Searching...", id);
@@ -14,12 +14,12 @@ Json::Value SwordSoldier::onTick() {
             fmt::println("Unit [{}]: found target {}. Searching...", id, target_opt.value());
             target = target_opt.value();
         }
-        return Json::nullValue;
+        return idle();
     }
     if (!UnitsPool::is_unit_alive(target)) {
         fmt::println("Unit [{}]: target {} not alive", id, target);
         target = -1;
-        return Json::nullValue;
+        return idle();
     }
     if (UnitsPool::is_overlapping(this, target)) {
         fmt::println("Unit [{}]: overlapping with target: {}", id, target);
@@ -27,7 +27,7 @@ Json::Value SwordSoldier::onTick() {
         if (target_unit == nullptr) {
             fmt::println("Unit [{}]: target {} is nullptr", id, target);
             target = -1;
-            return Json::nullValue;
+            return idle();
         }
         Json::Value result;
         result["type"] = "attack";
@@ -53,7 +53,7 @@ Json::Value SwordSoldier::onTick() {
     } 
     fmt::println("Unit [{}]: moving toward target {}, but target not found.", id, target);
     target = -1;
-    return Json::nullValue;
+    return idle();
 }
 
 void SwordSoldier::onInit() {
@@ -62,4 +62,11 @@ void SwordSoldier::onInit() {
 
 void SwordSoldier::parse(const Json::Value& value) {
     BaseUnit::parse(value);
+}
+
+Json::Value SwordSoldier::idle() {
+    Json::Value result;
+    result["type"] = "idle";
+    result["id"] = id;
+    return result;
 }

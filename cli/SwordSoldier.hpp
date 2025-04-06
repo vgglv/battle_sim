@@ -9,5 +9,6 @@ public:
     void onInit() override;
     void parse(const Json::Value& value) override;
 private:
+    Json::Value idle();
     int target = -1;
 };

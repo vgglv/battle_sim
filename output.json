@@ -1,0 +1,395 @@
+[
+	{
+		"actions" : 
+		[
+			{
+				"id" : 0,
+				"type" : "idle"
+			},
+			{
+				"id" : 1,
+				"type" : "idle"
+			}
+		],
+		"tick" : 0
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 210,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 590,
+				"y" : 400
+			}
+		],
+		"tick" : 1
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 220,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 580,
+				"y" : 400
+			}
+		],
+		"tick" : 2
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 230,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 570,
+				"y" : 400
+			}
+		],
+		"tick" : 3
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 240,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 560,
+				"y" : 400
+			}
+		],
+		"tick" : 4
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 250,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 550,
+				"y" : 400
+			}
+		],
+		"tick" : 5
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 260,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 540,
+				"y" : 400
+			}
+		],
+		"tick" : 6
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 270,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 530,
+				"y" : 400
+			}
+		],
+		"tick" : 7
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 280,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 520,
+				"y" : 400
+			}
+		],
+		"tick" : 8
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 290,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 510,
+				"y" : 400
+			}
+		],
+		"tick" : 9
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 300,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 500,
+				"y" : 400
+			}
+		],
+		"tick" : 10
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 310,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 490,
+				"y" : 400
+			}
+		],
+		"tick" : 11
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 320,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 480,
+				"y" : 400
+			}
+		],
+		"tick" : 12
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 330,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 470,
+				"y" : 400
+			}
+		],
+		"tick" : 13
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 340,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 460,
+				"y" : 400
+			}
+		],
+		"tick" : 14
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 350,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 450,
+				"y" : 400
+			}
+		],
+		"tick" : 15
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 360,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 440,
+				"y" : 400
+			}
+		],
+		"tick" : 16
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 370,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 430,
+				"y" : 400
+			}
+		],
+		"tick" : 17
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 380,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 420,
+				"y" : 400
+			}
+		],
+		"tick" : 18
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 390,
+				"y" : 400
+			},
+			{
+				"target" : 1,
+				"type" : "move",
+				"x" : 410,
+				"y" : 400
+			}
+		],
+		"tick" : 19
+	},
+	{
+		"actions" : 
+		[
+			{
+				"target" : 0,
+				"type" : "move",
+				"x" : 400,
+				"y" : 400
+			},
+			{
+				"attacked" : 0,
+				"attacking" : 1,
+				"dmg" : 80.0,
+				"type" : "attack"
+			}
+		],
+		"tick" : 20
+	},
+	{
+		"actions" : 
+		[
+			{
+				"attacked" : 1,
+				"attacking" : 0,
+				"dmg" : 80.0,
+				"type" : "attack"
+			},
+			{
+				"attacked" : 0,
+				"attacking" : 1,
+				"dead" : true,
+				"dmg" : 80.0,
+				"type" : "attack"
+			}
+		],
+		"tick" : 21
+	}
+]

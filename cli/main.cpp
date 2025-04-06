@@ -50,7 +50,7 @@ int main(int argc, char* argv[]) {
     }
 
     Json::StreamWriterBuilder writer;
-    std::string jsonString = Json::writeString(writer, root);
+    std::string jsonString = Json::writeString(writer, outputJson);
 
     // Write to a file
     std::ofstream outputFile("output.json");
